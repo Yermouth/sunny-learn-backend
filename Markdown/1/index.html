@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Markdown小記 | Sunny Learn Backend</title><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font-size:100%;line-height:1.75em;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:400;word-wrap:break-word;}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:3.5rem;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:2.625rem;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.75rem;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.75rem;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.75rem;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.75rem;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:tnum;padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}</style><link href="//fonts.googleapis.com/css?family=Montserrat:700|Merriweather:400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/><style>.markdown pre{display:block;background:#3f3f3f;color:#dcdcdc;overflow-y:hidden}.markdown pre code{background:none;border:none;border-radius:3px;display:inline-block;overflow:inherit;padding:1.58333rem;white-space:inherit;word-wrap:normal}code{border-radius:3px;white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;word-wrap:break-word;background:#e5e5e5;border:1px solid #ccc;display:inline;font-family:Inconsolata,monospace,serif;max-width:100%;overflow:auto;padding:0 .1625rem}.clojure .hljs-attribute,.css .hljs-class,.css .hljs-id,.hljs-keyword,.hljs-request,.hljs-status,.hljs-tag,.lisp .hljs-title,.nginx .hljs-title{color:#e3ceab}.django .hljs-filter .hljs-argument,.django .hljs-template_tag,.django .hljs-variable{color:#dcdcdc}.hljs-date,.hljs-number{color:#8cd0d3}.apache .hljs-sqbracket,.dos .hljs-envvar,.dos .hljs-stream,.hljs-variable{color:#efdcbc}.diff .hljs-change,.dos .hljs-flow,.hljs-literal,.python .exception,.python .hljs-built_in,.tex .hljs-special{color:#efefaf}.diff .hljs-chunk,.hljs-subst{color:#8f8f8f}.apache .hljs-tag,.diff .hljs-header,.dos .hljs-keyword,.haskell .hljs-type,.hljs-prompt,.hljs-title,.nginx .hljs-built_in,.python .hljs-decorator,.ruby .hljs-class .hljs-parent,.tex .hljs-command{color:#efef8f}.dos .hljs-winutils,.ruby .hljs-string,.ruby .hljs-symbol,.ruby .hljs-symbol .hljs-string{color:#dca3a3}.apache .hljs-cbracket,.coffeescript .hljs-attribute,.css .hljs-rules .hljs-value,.diff .hljs-deletion,.hljs-attr_selector,.hljs-built_in,.hljs-javadoc,.hljs-pragma,.hljs-preprocessor,.hljs-pseudo,.hljs-string,.hljs-tag .hljs-value,.smalltalk .hljs-array,.smalltalk .hljs-class,.smalltalk .hljs-localvars,.sql .hljs-aggregate,.tex .hljs-formula{color:#cc9393}.diff .hljs-addition,.hljs-comment,.hljs-doctype,.hljs-pi,.hljs-shebang,.hljs-template_comment,.java .hljs-annotation{color:#7f9f7f}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .css,.xml .hljs-cdata,.xml .javascript,.xml .vbscript{opacity:.5}</style></head><body class="landing-page"><div id="react-mount"><div style="max-width:42rem;margin-left:auto;margin-right:auto;padding:2.625rem 1.3125rem;" data-reactroot="" data-reactid="1" data-react-checksum="554927007"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;" data-reactid="2"><a style="box-shadow:none;text-decoration:none;color:inherit;" href="//" data-reactid="3">Sunny Learn Backend</a></h3><div class="markdown" data-reactid="4"><h1 style="margin-top:0;" data-reactid="5">Markdown小記</h1><div data-reactid="6"><p>programming和寫blog最大的動力莫過於嘗試新事物。</p>
+<p>參考 <a href="http://bryannotes.blogspot.hk/2015/01/markdownblog-stackedit_37.html">Bryan’s Notes for Big Data Analysis and Career Life</a> 的SlackEdit的做法後，將StackEdit和google synchronize，以後寫blog便能直接打markdown，方便多了，網頁外觀也讓我更滿意。</p>
+<p><i class = "icon icon ion-happy-outline"></i></p>
+<p>如果要讓網頁顯示如StackEdit右方的template，則需在<code>&lt;head&gt;</code>的位置加以下兩句。</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stackedit.io/res-min/themes/base.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>在下面練習一下markdown的features:</p>
+<h2>Heading是雙#</h2>
+<p><strong>Bold</strong>是雙星**</p>
+<blockquote>
+<p>Note 是 &gt;</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>分句是 &gt; - (要和 &gt; 隔一行)</li>
+</ul>
+</blockquote>
+<p><a href="#Heading%E6%98%AF%E9%9B%99#">[Link text](# Heading是雙# #)</a></p>
+<p><a href="https://www.google.com.hk/">[URL text](URL Link)</a></p>
+<p>[ ]中間加^footnotename便是footnote[^footnote]
+[^footnote]: 這是個footnote[^footnote]</p>
+<p><kbd>鍵盤按鈕</kbd></p>
+<p>###更多原有的例子:</p>
+<p><i class="icon-cog"></i><i class="icon-pencil"></i><i class="icon-trash"></i><i class="icon-hdd"></i><i class="icon-hdd"></i><i class="icon-upload"></i> <i class="icon-provider-gdrive"></i><i class="icon-provider-dropbox"></i><i class="icon-refresh"></i>
+<a href="http://www.tutorialspoint.com/ionic/ionic_icons.htm">Click here for more icons</a></p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h3>Definition Lists</h3>
+<p><strong>Markdown Extra</strong> has a special syntax for definition lists too:</p>
+<p>Term 1
+Term 2
+:   Definition A
+:   Definition B</p>
+<p>Term 3</p>
+<p>:   Definition C</p>
+<p>:   Definition D</p>
+<pre><code>&gt; part of definition D
+</code></pre>
+<h3>Fenced code blocks</h3>
+<p>GitHub’s fenced code blocks are also supported with <strong>Highlight.js</strong> syntax highlighting:</p>
+<pre><code><span class="hljs-comment">// Foo</span>
+<span class="hljs-keyword">var</span> bar = <span class="hljs-number">0</span>;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single backticks</td>
+<td><code>'Isn't this fun?'</code></td>
+<td>‘Isn’t this fun?’</td>
+</tr>
+<tr>
+<td>Quotes</td>
+<td><code>&quot;Isn't this fun?&quot;</code></td>
+<td>“Isn’t this fun?”</td>
+</tr>
+<tr>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>– is en-dash, — is em-dash</td>
+</tr>
+</tbody>
+</table>
+<h3>Table of contents</h3>
+<p>You can insert a table of contents using the marker <code>[TOC]</code>:</p>
+<p>[TOC]</p>
+<h3>MathJax</h3>
+<p>You can render <em>LaTeX</em> mathematical expressions using <strong>MathJax</strong>, as on <a href="http://bryannotes.blogspot.hk/2015/01/markdownblog-stackedit_37.html">math.stackexchange.com</a>:</p>
+<p>The <em>Gamma function</em> satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral</p>
+<p>$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt,.
+$$</p>
+<blockquote>
+<p><strong>Tip:</strong> To make sure mathematical expressions are rendered properly on your website, include <strong>MathJax</strong> into your template:</p>
+</blockquote>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> You can find more information about <strong>LaTeX</strong> mathematical expressions [here][4].</p>
+</blockquote>
+<h3>UML diagrams</h3>
+<p>You can also render sequence diagrams like this:</p>
+<pre><code class="language-sequence"><span class="hljs-symbol">Alice</span>-&gt;<span class="hljs-keyword">Bob: </span>Hello <span class="hljs-keyword">Bob, </span>how are you?
+<span class="hljs-symbol">Note</span> right of <span class="hljs-keyword">Bob: </span><span class="hljs-keyword">Bob </span>thinks
+<span class="hljs-keyword">Bob--&gt;Alice: </span>I am good thanks!
+</code></pre>
+<p>And flow charts like this:</p>
+<pre><code class="language-flow">st=&gt;start: <span class="hljs-type">Start</span>
+e=&gt;<span class="hljs-keyword">end</span>
+<span class="hljs-keyword">op</span>=&gt;operation: <span class="hljs-type">My</span> <span class="hljs-type">Operation</span>
+cond=&gt;condition: <span class="hljs-type">Yes</span> or <span class="hljs-type">No</span>?
+
+st-&gt;<span class="hljs-keyword">op</span>-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;<span class="hljs-keyword">op</span>
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> You can find more information:</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>about <strong>Sequence diagrams</strong> syntax [here][7],</li>
+<li>about <strong>Flow charts</strong> syntax [here][8].</li>
+</ul>
+</blockquote>
+<h3>Support StackEdit</h3>
+<p><a href="https://monetizejs.com/authorize?client_id=ESTHdCYOi18iLhhO&amp;summary=true"><img src="https://cdn.monetizejs.com/resources/button-32.png" alt=""></a></p>
+</div><em style="display:block;margin-bottom:3.5rem;" data-reactid="7"><!-- react-text: 8 -->Posted <!-- /react-text --><!-- react-text: 9 -->July 10, 2016<!-- /react-text --></em><hr style="margin-bottom:3.5rem;" data-reactid="10"/><div data-reactid="11"><h6 style="margin:0;font-size:0.63246rem;line-height:1.75rem;letter-spacing:-0.25px;" data-reactid="12">READ THIS NEXT:</h6><h3 style="margin-top:0;margin-bottom:0.4375rem;" data-reactid="13"><a href="//Rancher/1/?readNext=true" data-reactid="14">Rancher Exploration</a></h3><p data-reactid="15">
+最近有很多Docker-related的task要處理，所以經常要Google查看不同的Doc和Stack。
+一次無意中google search 「Hong Kong Docker」 和 「香港 Docker」 之下發現，docker在香港好像比台灣和其他地方Inactive，meetup group和討論區等好像一段時間沒有活動。
+其實在香港的大學Computer Science...</p><hr data-reactid="16"/></div><div data-reactid="17"><p style="margin-bottom:1.75rem;" data-reactid="18"><img src="/458f2c776e6572352315d5c69e8102ce.jpg" alt="author Sunny Lai" style="float:left;margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem;" data-reactid="19"/><!-- react-text: 20 -->Written by <!-- /react-text --><strong data-reactid="21">Sunny Lai</strong><!-- react-text: 22 -->, a passionate software engineer interested in NLP, Big Data, and Docker. <!-- /react-text --><a href="https://github.com/Yermouth" data-reactid="23">You should follow him on Github</a></p><p data-reactid="24"><!-- react-text: 25 -->This Blog in Google Blogger: <!-- /react-text --><a data-reactid="26">https://sunnylearnbackend.blogspot.hk/</a></p></div></div><span style="display:block;clear:both;" data-reactid="27"> </span></div></div><script src="//bundle.js?t=1473739886757"></script></body></html>

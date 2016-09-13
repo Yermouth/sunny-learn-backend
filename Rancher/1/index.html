@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Rancher Exploration | Sunny Learn Backend</title><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font-size:100%;line-height:1.75em;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:400;word-wrap:break-word;}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:3.5rem;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:2.625rem;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.75rem;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.75rem;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.75rem;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:hsla(0,0%,0%,0.9);font-family:Merriweather,Georgia,serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.75rem;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:tnum;padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}</style><link href="//fonts.googleapis.com/css?family=Montserrat:700|Merriweather:400,400i,700,700i,900,900i" rel="stylesheet" type="text/css"/><style>.markdown pre{display:block;background:#3f3f3f;color:#dcdcdc;overflow-y:hidden}.markdown pre code{background:none;border:none;border-radius:3px;display:inline-block;overflow:inherit;padding:1.58333rem;white-space:inherit;word-wrap:normal}code{border-radius:3px;white-space:pre;white-space:pre-wrap;white-space:pre-line;white-space:-pre-wrap;white-space:-o-pre-wrap;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;word-wrap:break-word;background:#e5e5e5;border:1px solid #ccc;display:inline;font-family:Inconsolata,monospace,serif;max-width:100%;overflow:auto;padding:0 .1625rem}.clojure .hljs-attribute,.css .hljs-class,.css .hljs-id,.hljs-keyword,.hljs-request,.hljs-status,.hljs-tag,.lisp .hljs-title,.nginx .hljs-title{color:#e3ceab}.django .hljs-filter .hljs-argument,.django .hljs-template_tag,.django .hljs-variable{color:#dcdcdc}.hljs-date,.hljs-number{color:#8cd0d3}.apache .hljs-sqbracket,.dos .hljs-envvar,.dos .hljs-stream,.hljs-variable{color:#efdcbc}.diff .hljs-change,.dos .hljs-flow,.hljs-literal,.python .exception,.python .hljs-built_in,.tex .hljs-special{color:#efefaf}.diff .hljs-chunk,.hljs-subst{color:#8f8f8f}.apache .hljs-tag,.diff .hljs-header,.dos .hljs-keyword,.haskell .hljs-type,.hljs-prompt,.hljs-title,.nginx .hljs-built_in,.python .hljs-decorator,.ruby .hljs-class .hljs-parent,.tex .hljs-command{color:#efef8f}.dos .hljs-winutils,.ruby .hljs-string,.ruby .hljs-symbol,.ruby .hljs-symbol .hljs-string{color:#dca3a3}.apache .hljs-cbracket,.coffeescript .hljs-attribute,.css .hljs-rules .hljs-value,.diff .hljs-deletion,.hljs-attr_selector,.hljs-built_in,.hljs-javadoc,.hljs-pragma,.hljs-preprocessor,.hljs-pseudo,.hljs-string,.hljs-tag .hljs-value,.smalltalk .hljs-array,.smalltalk .hljs-class,.smalltalk .hljs-localvars,.sql .hljs-aggregate,.tex .hljs-formula{color:#cc9393}.diff .hljs-addition,.hljs-comment,.hljs-doctype,.hljs-pi,.hljs-shebang,.hljs-template_comment,.java .hljs-annotation{color:#7f9f7f}.coffeescript .javascript,.javascript .xml,.tex .hljs-formula,.xml .css,.xml .hljs-cdata,.xml .javascript,.xml .vbscript{opacity:.5}</style></head><body class="landing-page"><div id="react-mount"><div style="max-width:42rem;margin-left:auto;margin-right:auto;padding:2.625rem 1.3125rem;" data-reactroot="" data-reactid="1" data-react-checksum="-977485641"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;" data-reactid="2"><a style="box-shadow:none;text-decoration:none;color:inherit;" href="//" data-reactid="3">Sunny Learn Backend</a></h3><div class="markdown" data-reactid="4"><h1 style="margin-top:0;" data-reactid="5">Rancher Exploration</h1><div data-reactid="6"><p><img src="https://lh3.googleusercontent.com/mLSqHcxLSO6yxNeHxGAgjhbBv6ybHYJngcHPXuxxGf9BY04dbd9d_62McB6OEDfAu11wCI2B=s4800" alt="enter image description here" title="rancher.png"></p>
+<p>最近有很多Docker-related的task要處理，所以經常要Google查看不同的Doc和Stack。</p>
+<p>一次無意中google search <code>「Hong Kong Docker」</code> 和 <code>「香港 Docker」</code> 之下發現，docker在香港好像比台灣和其他地方Inactive，meetup group和討論區等好像一段時間沒有活動。</p>
+<p>其實在香港的大學Computer Science學系中關於docker的course太少(CSCI4140 雖然沒有讀過，但看course outline好像只教到用dockerfile build image就完了)。雖然自己接觸docker的時間沒有多長，但已經充份感受到Docker的好處，包括其輕量、高度資源隔離和scalability。我有相信不久將來只會有更多公司採用docker在infrastructure中。</p>
+<p>在網上有不少關於docker basics的tutorial，在此我便不作重覆，若你沒有接觸過docker，<a href="https://docs.docker.com/v1.10/windows/">這網</a>是一個很好的開始。</p>
+<p>這帖介紹主要介紹的是<a href="http://rancher.com/">RANCHER</a>中的cattle，Rancher是一個可用作執行和管理container的開源平台。其整潔的UI和多平台整合(包括Cattle, Kubernetes, Docker swarm 和 Mesos)能方便devops們生常的工作。Cattle是Rancher預設中的orchestration platform，並由Rancher團隊主導開源開發。</p>
+<hr>
+<h3>在Google cloud instance Deploy Rancher</h3>
+<blockquote>
+<p><strong>先前準備：</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Google Cloud Platform Account (現時<a href="https://cloud.google.com/">註冊</a>free trial有60日300美元)</li>
+<li>開新專案</li>
+</ul>
+</blockquote>
+<p><img src="https://lh3.googleusercontent.com/DpdymMWAGm-gQ0CW1zDuhAyjm77dNpkLP5V1Vx6ESI3uYi7F2KBq7X-clSwREigTSR0ugFnZ=s4800" alt="enter image description here"></p>
+<hr>
+<p>###Deploy Rancher 步驟：###</p>
+<p>簡略說明： 在google cloud instance啟用ubuntu來建Rancher Server</p>
+<hr>
+<p>1.在建立執行個體中，選擇以下設定</p>
+<pre><code>名稱： rancher
+區域： asia-east1-b
+機器類型： <span class="hljs-number">2</span>個vCPU (建議rancher的host每個最少有<span class="hljs-number">2</span>個vCPU)
+開機磁碟： Ubuntu <span class="hljs-number">14.04</span> LTS
+</code></pre>
+<p>然後按 <code>建立</code></p>
+<p><img src="https://lh3.googleusercontent.com/2uCJUm3CUNYEEmWRvtB9BnFDsEc1-GJ6ZNhKLBQ41IFp6V46XIGpx4dOV4NGVrR7HA3hP7gW=s4800" alt="enter image description here" title="setup.png"></p>
+<hr>
+<p>2.等大約兩三分鐘，Rancher instance便會出現在console中，按 <code>SSH</code> 開啟SSH Console</p>
+<p><img src="https://lh3.googleusercontent.com/hyVvfFTjzagHGap908NKBIBK4rzKd56XQZhO2fJbgFZnDaaaM-SntjAOyfgw_tHbL0zwphrZ=s4800" alt="enter image description here" title="rancher.png"></p>
+<hr>
+<p>3.開啟SSH Console後，在Console中鍵入：</p>
+<pre><code><span class="hljs-variable">$ </span>sudo su
+</code></pre>
+<p>取得root’s privileges後，根據Docker offical doc<a href="https://docs.docker.com/engine/installation/linux/ubuntulinux/">下載</a>docker</p>
+<p>下載成功後鍵入：</p>
+<pre><code>$ docker -v
+&gt; Docker version <span class="hljs-number">1.12</span><span class="hljs-number">.0</span>, build <span class="hljs-number">8</span>eab29e
+</code></pre>
+<p>確認docker下載成功</p>
+<hr>
+<p>4.運行Rancher Server 的container</p>
+<pre><code>$ #pull rancher/server image, name it as rancher-server and run it
+$ sudo docker run -d --restart=always -p 8080:8080 --name=rancher-server rancher/server
+<span class="hljs-quote">&gt; Unable to find image 'rancher/server:latest' locally</span>
+<span class="hljs-quote">&gt; latest: Pulling from rancher/server</span>
+<span class="hljs-quote">&gt; 5a132a7e7af1: Extracting [==&gt;                                                ] 2.785 MB/65.69 MB</span>
+<span class="hljs-quote">&gt; fd2731e4c50c: Download complete</span>
+<span class="hljs-quote">&gt; 28a2f68d1120: Download complete</span>
+<span class="hljs-quote">&gt; a3ed95caeb02: Download complete</span>
+<span class="hljs-quote">&gt; ec0eccabc85c: Downloading [========&gt;                                          ] 21.09 MB/126.7 MB</span>
+<span class="hljs-quote">&gt; ba5257ddca52: Download complete</span>
+<span class="hljs-quote">&gt; 06490d1f14ef: Waiting</span>
+<span class="hljs-quote">&gt; 8bdb5e2ee030: Waiting</span>
+<span class="hljs-quote">&gt; fbbc0b32f5ab: Waiting</span>
+<span class="hljs-quote">&gt; f850155f13f9: Waiting</span>
+<span class="hljs-quote">&gt; b372d6eab456: Waiting</span>
+<span class="hljs-quote">&gt; 2a9a243395a1: Waiting</span>
+<span class="hljs-quote">&gt; 169c9d056b3d: Waiting</span>
+<span class="hljs-quote">&gt; 7025c965e745: Waiting</span>
+</code></pre>
+<hr>
+<p>5.用你instance的public ip <code>(我的是104.199.132.123:8080)</code> access Rancher Server GUI interface：
+<img src="https://lh3.googleusercontent.com/9GmMb0JY86yYB0G_5nCt062TfUbAE2Eu12oZi7IQn-Ydrxi-GwYmuTT7bxvH0fTlfoBP3TJ2=s4800" alt="enter image description here"></p>
+<p>被Redirected到Default Cattle環境的setup page</p>
+<p><img src="https://lh3.googleusercontent.com/6nbjZChF35KTb-T7AlLicrjPLpsgYn-UuHUZjseVjjbZ_gr-7P3kHfdJnBlcxIIH6sUh0h2K=s4800" alt="enter image description here"></p>
+<p>然後按 <code>Add Host</code></p>
+<p><img src="https://lh3.googleusercontent.com/uFyVKCtPbFtPcrmh80D8TDbCw1rws7JHjrjtZ9IepaCUD4tlRpkc_cN3TSDSiS-ZdOz5FRy1=s4800" alt="enter image description here"></p>
+<p>按<code>save</code>，後redirect到
+<img src="https://lh3.googleusercontent.com/G7NB11_XWL6owkdHSlxoNBfzHCkRMVT18kDS38Qoq726O0iQ4EX3DcLsv8kVPXWGPPJgyq3N=s4800" alt="enter image description here"></p>
+<hr>
+<p>6.啟用另一個instance <code>名稱=rancher2</code> 重覆step 1至3</p>
+<p>我們將 <code>rancher2</code> 加入到Rancher Cattle Default environment成為host
+在 <code>rancher2</code> 中鍵入Rancher Web Interface 中 Step5 的command：</p>
+<pre><code>$ sudo docker run -d --privileged -v <span class="hljs-regexp">/var/</span>run<span class="hljs-regexp">/docker.sock:/</span>var<span class="hljs-regexp">/run/</span>docker.sock -v <span class="hljs-regexp">/var/</span>lib<span class="hljs-regexp">/rancher:/</span>var<span class="hljs-regexp">/lib/</span>rancher rancher<span class="hljs-regexp">/agent:v1.0.2 http:/</span><span class="hljs-regexp">/104.199.132.123:8080/</span>v1<span class="hljs-regexp">/scripts/</span><span class="hljs-number">13E48</span><span class="hljs-string">BE5F92FF8040F19:</span><span class="hljs-number">1470556800000</span>:KRRbPnWocWjt36jlwv5T9JOLJZA
+&gt; Unable to find image <span class="hljs-string">'rancher/agent:v1.0.2'</span> locally
+&gt; v1<span class="hljs-number">.0</span><span class="hljs-number">.2</span>: Pulling from rancher/agent
+&gt; <span class="hljs-number">5</span><span class="hljs-string">a132a7e7af1:</span> Pull complete
+&gt; <span class="hljs-string">fd2731e4c50c:</span> Pull complete
+&gt; <span class="hljs-number">28</span><span class="hljs-string">a2f68d1120:</span> Pull complete
+&gt; <span class="hljs-string">a3ed95caeb02:</span> Pull complete
+&gt; <span class="hljs-number">7</span><span class="hljs-string">fa4fac65171:</span> Pull complete
+&gt; <span class="hljs-number">33</span><span class="hljs-string">de63de5fdb:</span> Pull complete
+&gt; <span class="hljs-string">d00b3b942272:</span> Pull complete
+&gt; <span class="hljs-string">Digest:</span> <span class="hljs-string">sha256:</span>b0b532d1e891534779d0eb1a01a5717ebfff9ac024db4412ead87d834ba92544
+&gt; <span class="hljs-string">Status:</span> Downloaded newer image <span class="hljs-keyword">for</span> rancher/<span class="hljs-string">agent:</span>v1<span class="hljs-number">.0</span><span class="hljs-number">.2</span>
+&gt; fd9abc0171ff8105cc3afb51d1de582b885174cc1caa6c5786df0db7aa1bbb14
+</code></pre>
+<p>若成功add host，主頁將會顯示：
+<img src="https://lh3.googleusercontent.com/8DgcyrHTB4Hd250Pp_EStoQ-WmZUNl_RazjWUTewiJVpkHVJljuoqZFNfmOZ3Korra1Jrnqh=s4800" alt="enter image description here"></p>
+<p>可以在<code>INFRASTRUCTURE</code>下確認已經加入<code>rancher2</code></p>
+<hr>
+<p>成品：</p>
+<blockquote>
+<p>Rancher Server <code>rancher</code>:</p>
+<ul>
+<li>Default Rancher Cattle Environment</li>
+<li>host: <code>rancher2</code></li>
+</ul>
+</blockquote>
+<p>下次繼續</p>
+</div><em style="display:block;margin-bottom:3.5rem;" data-reactid="7"><!-- react-text: 8 -->Posted <!-- /react-text --><!-- react-text: 9 -->August 7, 2016<!-- /react-text --></em><hr style="margin-bottom:3.5rem;" data-reactid="10"/><div data-reactid="11"><h6 style="margin:0;font-size:0.63246rem;line-height:1.75rem;letter-spacing:-0.25px;" data-reactid="12">READ THIS NEXT:</h6><h3 style="margin-top:0;margin-bottom:0.4375rem;" data-reactid="13"><a href="//alpine-linux/1/?readNext=true" data-reactid="14">Alpine Linux</a></h3><p data-reactid="15">最近在公司要學習用Docker build LEMP stack，所以今天有機會接觸到我來說十分陌生的linux --Alpine Linux
+之前我對Alpine Linux的認識為零，以為大部份linux已經預裝了nano editor。然而當我要在Alpine用command line修改一些文件的config時，卻發現Alpine竟然沒有預載nano。更令我驚訝的是Alpine...</p><hr data-reactid="16"/></div><div data-reactid="17"><p style="margin-bottom:1.75rem;" data-reactid="18"><img src="/458f2c776e6572352315d5c69e8102ce.jpg" alt="author Sunny Lai" style="float:left;margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem;" data-reactid="19"/><!-- react-text: 20 -->Written by <!-- /react-text --><strong data-reactid="21">Sunny Lai</strong><!-- react-text: 22 -->, a passionate software engineer interested in NLP, Big Data, and Docker. <!-- /react-text --><a href="https://github.com/Yermouth" data-reactid="23">You should follow him on Github</a></p><p data-reactid="24"><!-- react-text: 25 -->This Blog in Google Blogger: <!-- /react-text --><a data-reactid="26">https://sunnylearnbackend.blogspot.hk/</a></p></div></div><span style="display:block;clear:both;" data-reactid="27"> </span></div></div><script src="//bundle.js?t=1473739886757"></script></body></html>
