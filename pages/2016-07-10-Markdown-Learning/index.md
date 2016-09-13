@@ -4,6 +4,7 @@ date: "2016-07-10T00:00:00.000Z"
 layout: post
 readNext: "/Rancher/1"
 path: "/Markdown/1"
+tag: "Markdown"
 ---
 
 programming和寫blog最大的動力莫過於嘗試新事物。

@@ -4,6 +4,7 @@ date: "2016-08-07T00:00:00.000Z"
 layout: post
 readNext: "/"
 path: "/Rancher/1"
+tag: "Rancher"
 ---
 
 ![enter image description here](https://lh3.googleusercontent.com/mLSqHcxLSO6yxNeHxGAgjhbBv6ybHYJngcHPXuxxGf9BY04dbd9d_62McB6OEDfAu11wCI2B=s4800 "rancher.png")
