@@ -5,6 +5,7 @@ layout: post
 readNext: "/Rancher/1"
 path: "/Markdown/1"
 tag: "Markdown"
+language: Chinese
 ---
 
 programming和寫blog最大的動力莫過於嘗試新事物。

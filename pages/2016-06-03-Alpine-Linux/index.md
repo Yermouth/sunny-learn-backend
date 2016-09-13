@@ -5,6 +5,7 @@ layout: post
 readNext: "/AWS-Summit/1"
 path: "/alpine-linux/1"
 tag: "Alpine"
+language: Chinese
 ---
 
 最近在公司要學習用Docker build LEMP stack，所以今天有機會接觸到我來說十分陌生的linux --Alpine Linux

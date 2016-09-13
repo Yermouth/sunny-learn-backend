@@ -5,6 +5,7 @@ layout: post
 readNext: "/Markdown/1"
 path: "/AWS-Summit/1"
 tag: "AWS"
+language: Chinese
 ---
 
 第一次參加這類大型活動，因為手上還有工作，只請了半天假。活動過後有點後悔下午才到現場，趕不上big data的talk，更後悔沒有多拍幾幅照片。
